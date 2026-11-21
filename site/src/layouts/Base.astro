@@ -1,0 +1,24 @@
+---
+import { sitio } from "../data/sitio";
+import "../styles/global.css";
+
+interface Props {
+  titulo?: string;
+}
+
+const { titulo } = Astro.props;
+const tituloPagina = titulo ? `${titulo} — ${sitio.nombre}` : sitio.nombre;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={sitio.descripcion} />
+    <title>{tituloPagina}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
