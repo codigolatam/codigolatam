@@ -1,6 +1,6 @@
-export const sitio = {
-  nombre: "Código LATAM",
+export const site = {
+  name: "Código LATAM",
   url: "https://codigolatam.media",
-  descripcion:
+  description:
     "Holding de medios técnicos en español: educación y comunidad para developers de América Latina.",
 } as const;

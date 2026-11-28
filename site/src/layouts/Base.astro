@@ -1,13 +1,13 @@
 ---
-import { sitio } from "../data/sitio";
+import { site } from "../data/site";
 import "../styles/global.css";
 
 interface Props {
-  titulo?: string;
+  title?: string;
 }
 
-const { titulo } = Astro.props;
-const tituloPagina = titulo ? `${titulo} — ${sitio.nombre}` : sitio.nombre;
+const { title } = Astro.props;
+const pageTitle = title ? `${title} — ${site.name}` : site.name;
 ---
 
 <!doctype html>
@@ -15,8 +15,8 @@ const tituloPagina = titulo ? `${titulo} — ${sitio.nombre}` : sitio.nombre;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={sitio.descripcion} />
-    <title>{tituloPagina}</title>
+    <meta name="description" content={site.description} />
+    <title>{pageTitle}</title>
   </head>
   <body>
     <slot />

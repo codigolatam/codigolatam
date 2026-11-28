@@ -1,8 +1,8 @@
 import { defineConfig } from "astro/config";
-import { sitio } from "./src/data/sitio";
+import { site } from "./src/data/site";
 
 // https://astro.build/config
 export default defineConfig({
-  site: sitio.url,
+  site: site.url,
   output: "static",
 });
