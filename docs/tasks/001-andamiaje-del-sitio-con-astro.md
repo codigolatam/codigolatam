@@ -93,4 +93,4 @@ Subsistema: no existe — se crea. El repo contiene solo artefactos de gestión;
 
 - Subagente: 2026-11-27 — Aprueba
 - Usuario (ejecución): 2026-11-27 — Aprueba
-- Usuario (cierre): [fecha] — [Aprueba | Solicita cambios]
+- Usuario (cierre): 2026-11-27 — Aprueba
