@@ -90,4 +90,4 @@ Subsistema: la configuración de despliegue no existe — se crea. El build que 
 
 - Subagente: 2026-11-27 — Aprueba
 - Usuario (ejecución): 2026-11-27 — Aprueba
-- Usuario (cierre): [fecha] — [Aprueba | Solicita cambios]
+- Usuario (cierre): 2026-11-27 — Aprueba
