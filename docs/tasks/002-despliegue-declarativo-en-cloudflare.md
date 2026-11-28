@@ -2,7 +2,7 @@
 
 ## Estado
 
-[~] En progreso
+[r] En revisión
 
 ## Tipo
 
@@ -68,16 +68,16 @@ Dejar el sitio publicado en Cloudflare Pages (worker de assets estáticos) con i
 
 Subsistema: la configuración de despliegue no existe — se crea. El build que publica sí existe (`site/` → `dist/`). La prueba de concepto ya verificó el shape exacto del config contra la API real: attach de ambos custom domains con exit 0. Decisión transversal aprobada: `wrangler.jsonc` vive en `site/` junto al proyecto que despliega — coherente con el brief (`./dist`) y con el dashboard, cuyo directorio raíz del proyecto es `site/` — y no en la raíz del repo como sugería el resultado esperado.
 
-- [ ] Añadir la página 404 mínima (`site/src/pages/404.astro`) sobre el layout base
+- [x] Añadir la página 404 mínima (`site/src/pages/404.astro`) sobre el layout base
   - Aporta: el asset que `not_found_handling: "404-page"` exige existe desde el primer deploy; la 404 diseñada llega con la tarea 005
-- [ ] Crear `site/wrangler.jsonc` final: `name: "codigolatam"`, `compatibility_date`, `assets.directory: "./dist"` con `not_found_handling: "404-page"`, `previews: {}` + `preview_urls: true`, y `routes` para apex y `www` con `zone_name` y `custom_domain`; comentarios en inglés (regla de `AGENTS.md`)
+- [x] Crear `site/wrangler.jsonc` final: `name: "codigolatam"`, `compatibility_date`, `assets.directory: "./dist"` con `not_found_handling: "404-page"`, `previews: {}` + `preview_urls: true`, y `routes` para apex y `www` con `zone_name` y `custom_domain`; comentarios en inglés (regla de `AGENTS.md`)
   - Aporta: el estado declarativo final del despliegue, versionado; es exactamente el shape que la prueba de concepto verificó con exit 0
   - Contexto: el nombre `codigolatam` debe coincidir con el proyecto del dashboard — es el dato que el alta humana no puede improvisar
-- [ ] Fijar `wrangler` como devDependency de `site/` (`^4.151.0`, la versión con la que corrió la prueba) y añadir el script `deploy`
+- [x] Fijar `wrangler` como devDependency de `site/` (`^4.151.0`, la versión con la que corrió la prueba) y añadir el script `deploy`
   - Aporta: la paridad local/remoto de la herramienta de despliegue que exige el brief
-- [ ] Añadir el test de contrato del config a la suite Vitest: parsea `wrangler.jsonc` y verifica assets, `not_found_handling` y las rutas contra la URL canónica del módulo de datos
+- [x] Añadir el test de contrato del config a la suite Vitest: parsea `wrangler.jsonc` y verifica assets, `not_found_handling` y las rutas contra la URL canónica del módulo de datos
   - Aporta: la coherencia config↔fuente única queda guardada contra regresiones — cierra además la observación de la revisión de la tarea 001 sobre la URL hardcodeada
-- [ ] Verificar sin tocar producción: batería completa + `npm run build` produce `dist/index.html` y `dist/404.html` + `npx wrangler deploy --dry-run` válido
+- [x] Verificar sin tocar producción: batería completa + `npm run build` produce `dist/index.html` y `dist/404.html` + `npx wrangler deploy --dry-run` válido
   - Aporta: los criterios de calidad verificados; el deploy real no se ejecuta contra el nombre `codigolatam` para que el alta del dashboard cree el proyecto limpio
 
 ## Suite de pruebas esperada
