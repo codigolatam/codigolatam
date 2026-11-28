@@ -15,7 +15,6 @@
 
 ## General
 
-- [ ] docs/tasks/002-despliegue-declarativo-en-cloudflare.md — Despliegue declarativo en Cloudflare
 - [ ] docs/tasks/003-ci-de-calidad-en-prs.md — CI de calidad en PRs
 - [ ] docs/tasks/004-sistema-de-marca-y-design-md.md — Sistema de marca y DESIGN.md
 - [ ] docs/tasks/005-layout-base-y-404.md — Layout base, navegación del ecosistema y 404

@@ -1,0 +1,25 @@
+{
+  // The worker name must match the project created in the Cloudflare
+  // dashboard (Workers & Pages) or the build fails.
+  "name": "codigolatam",
+  "compatibility_date": "2026-11-27",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+  },
+  // Branch previews: no config inheritance, one preview URL per branch.
+  "previews": {},
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "codigolatam.media",
+      "zone_name": "codigolatam.media",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.codigolatam.media",
+      "zone_name": "codigolatam.media",
+      "custom_domain": true,
+    },
+  ],
+}
