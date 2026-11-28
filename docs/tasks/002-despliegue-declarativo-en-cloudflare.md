@@ -2,7 +2,7 @@
 
 ## Estado
 
-[r] En revisión
+[x] Completada
 
 ## Tipo
 
@@ -88,6 +88,6 @@ Subsistema: la configuración de despliegue no existe — se crea. El build que 
 
 ## Revisión
 
-- Subagente: [fecha] — [Aprueba | Solicita cambios]
-- Usuario (ejecución): [fecha] — [Aprueba | Solicita cambios]
+- Subagente: 2026-11-27 — Aprueba
+- Usuario (ejecución): 2026-11-27 — Aprueba
 - Usuario (cierre): [fecha] — [Aprueba | Solicita cambios]
