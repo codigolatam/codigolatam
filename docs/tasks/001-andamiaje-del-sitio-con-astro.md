@@ -2,7 +2,7 @@
 
 ## Estado
 
-[r] En revisión
+[x] Completada
 
 ## Tipo
 
@@ -91,6 +91,6 @@ Subsistema: no existe — se crea. El repo contiene solo artefactos de gestión;
 
 ## Revisión
 
-- Subagente: [fecha] — [Aprueba | Solicita cambios]
-- Usuario (ejecución): [fecha] — [Aprueba | Solicita cambios]
+- Subagente: 2026-11-27 — Aprueba
+- Usuario (ejecución): 2026-11-27 — Aprueba
 - Usuario (cierre): [fecha] — [Aprueba | Solicita cambios]
